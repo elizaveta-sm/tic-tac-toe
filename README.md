@@ -3,7 +3,7 @@
 
 [Tic Tac Toe](https://elizaveta-sm.github.io/tic-tac-toe/)
 
-![banner](assets/banner.png)
+![banner](src/assets/banner.png)
 Two players facing off on the same device. 
 
 💫 Future plans for the project include adding a mode where players can compete against a 'robot' opponent.
