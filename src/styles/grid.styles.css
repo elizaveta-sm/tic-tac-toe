@@ -1,0 +1,46 @@
+#grid {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#grid .cell {
+    background-color: var(--light-dark-bg-color);
+    height: 7rem;
+    width: 7rem;
+
+    border-radius: var(--button-border-radius);
+    border-width: var(--button-border-width);
+    padding: var(--button-padding);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#grid .cell  {
+    background-color: var(--light-dark-bg-color);
+    height: 7rem;
+    width: 7rem;
+
+    border-radius: var(--button-border-radius);
+    border-width: var(--button-border-width);
+    padding: var(--button-padding);
+    text-transform: uppercase;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid .cell.X {
+    color: var(--blue-color);
+    font-size: 4.5rem; 
+    font-weight: 700;
+}
+
+#grid .cell.O {
+    color: var(--yellow-color);
+    font-size: 4.5rem; 
+    font-weight: 700;
+}

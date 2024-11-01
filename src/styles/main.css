@@ -1,0 +1,80 @@
+:root {
+    --button-primary-color: #1899D6;
+
+    --gray-color: #a8bec9;
+    --blue-color: #31c3be;
+    --yellow-color: #f2b237;
+    --dark-text-color: #192a32;
+    --light-text-color: #a8bec9;
+    --light-dark-bg-color: #1f3540;
+
+    --button-hover-color: #1CB0F6;
+    --button-text-color: #FFFFFF;
+    --button-border-radius: 1rem;
+    --button-padding: 0.8rem 1rem;
+    --button-border-width: 0 0 0.25rem;
+    --button-shadow-width: 0 0 0.25rem;
+    --text-spacing: 0.05em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-text-color);
+    text-rendering: optimizeLegibility;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+#App {
+    color: #a8bec9;
+    padding: 1rem;
+    max-width: 40rem;
+}
+
+button {
+    appearance: none;
+    border: solid transparent;
+    border-radius: var(--button-border-radius);
+    border-width: var(--button-border-width);
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: var(--text-spacing);
+    line-height: 1.25;
+    margin: 0;
+    outline: none;
+    padding: var(--button-padding);
+    text-align: center;
+    text-transform: uppercase;
+
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s, background-color 0.2s;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.sub-header {
+    text-transform: uppercase;
+    font-weight: 500;
+}

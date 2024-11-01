@@ -1,0 +1,38 @@
+#game-start-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-start-screen #game-title {
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+#game-start-screen h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#game-start-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-start-options button {
+    color: var(--dark-text-color);
+    width: 15rem;
+}
+
+#game-start-options #vs-robot {
+    background-color: var(--yellow-color);
+}
+
+#game-start-options #vs-player {
+    background-color: var(--blue-color);
+}

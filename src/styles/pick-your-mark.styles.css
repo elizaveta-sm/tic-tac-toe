@@ -1,0 +1,87 @@
+#pick-your-mark-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-dark-bg-color);
+    padding: 1rem 1.25rem;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+}
+
+#pick-your-mark-container #pick-your-mark {
+    padding-bottom: 0.75rem;
+}
+
+#pick-your-mark-container #x-goes-first {
+    padding-top: 0.75rem;
+}
+
+.slide-toggle {
+    width: 18rem;
+    height: 3.5rem;
+    border-radius: 0.75rem;
+}
+
+.slide-toggle input#mark {
+    display: none;
+}
+
+.slide-toggle input#mark + label {
+    height: 100%;
+    width: 100%;
+}
+
+.slide-toggle input#mark + label > .mark-switch {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var(--blue-color);
+    color: white;
+    transition: all 0.5s ease;
+    padding: 3px;
+    border-radius: 0.5rem;
+}
+
+.slide-toggle input#mark + label > .mark-switch:before,
+.slide-toggle input#mark + label > .mark-switch:after {
+    border-radius: 0.5rem;
+    height: calc(100% - 6px);
+    width: calc(50% - 3px);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.slide-toggle input#mark + label > .mark-switch:before {
+    background-color: white;
+    color: var(--blue-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    left: 3px;
+    z-index: 10;
+    content: attr(data-unchecked);
+}
+
+.slide-toggle input#mark + label > .mark-switch:after {
+    right: 0;
+    content: attr(data-checked);
+}
+
+.slide-toggle input#mark:checked + label > .mark-switch {
+    background-color: var(--gray-color);
+}
+
+.slide-toggle input#mark:checked + label > .mark-switch:after {
+    left: 0;
+    content: attr(data-unchecked);
+}
+
+.slide-toggle input#mark:checked + label > .mark-switch:before {
+    color: var(--gray-color);
+    left: 50%;
+    content: attr(data-checked);
+}
